@@ -8,6 +8,12 @@
 <meta property="og:title" content="NaveenFXpro — Referral Links">
 <meta property="og:description" content="The trading platforms I actually use, with my referral links.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://naveeng1812.github.io/naveenfxpro-referrals/">
+<meta property="og:image" content="https://naveeng1812.github.io/naveenfxpro-referrals/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://naveeng1812.github.io/naveenfxpro-referrals/og-image.png">
 <meta name="theme-color" content="#f6f2ea" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0d141d" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2317263b'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='15' fill='%23f6f2ea' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E">
@@ -15,6 +21,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
+
 
 
 
@@ -112,6 +119,7 @@ button{font:inherit;color:inherit}
 .topbar{
   position:sticky;top:0;z-index:40;
   backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  background:var(--bg);
   background:color-mix(in srgb,var(--bg) 82%,transparent);
   border-bottom:1px solid var(--border);
 }
@@ -336,6 +344,26 @@ button{font:inherit;color:inherit}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important}
   .card:hover{transform:none}
+}
+
+
+/* ---- channel card ---- */
+.card--channel{
+  grid-column:1/-1;flex-direction:row;align-items:center;gap:22px;flex-wrap:wrap;
+  background:linear-gradient(115deg,var(--surface) 45%,var(--surface-2));
+  padding:24px 26px;
+}
+.card--channel .card__top{flex:0 0 auto;margin:0}
+.card--channel .card__logo{width:56px;height:56px;flex:0 0 56px;border-radius:14px}
+.card--channel .card__desc{flex:1 1 300px;min-width:0;margin:0}
+.card--channel .card__actions{margin:0;flex:0 0 auto}
+.btn--yt{background:#e00;color:#fff;padding:0 20px}
+.btn--yt:hover{background:#b00;color:#fff}
+.btn--yt svg{width:15px;height:15px}
+@media (max-width:720px){
+  .card--channel{flex-direction:column;align-items:stretch;gap:16px}
+  .card--channel .card__actions{width:100%}
+  .btn--yt{width:100%}
 }
 
 

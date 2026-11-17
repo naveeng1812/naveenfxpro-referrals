@@ -407,6 +407,11 @@ button{font:inherit;color:inherit}
 }
 
 
+/* ---- phones: photo first, drop the small kicker that would sit under it ---- */
+@media (max-width:900px){
+  .eyebrow{display:none}
+  .portrait{margin-bottom:6px}
+}
 /* ---- channel card ---- */
 .card--channel{
   grid-column:1/-1;flex-direction:row;align-items:center;gap:22px;flex-wrap:wrap;
@@ -422,6 +427,7 @@ button{font:inherit;color:inherit}
 .btn--yt svg{width:15px;height:15px}
 @media (max-width:720px){
   .card--channel{flex-direction:column;align-items:stretch;gap:16px}
+  .card--channel .card__desc{flex:0 0 auto}
   .card--channel .card__actions{width:100%}
   .btn--yt{width:100%}
 }

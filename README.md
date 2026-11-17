@@ -33,3 +33,7 @@ Everything is plain HTML inside `index.html`:
 | YouTube | https://www.youtube.com/@NaveenFXpro |
 
 Referral disclosure and a trading-risk note are in the page footer.
+
+## Deploy
+
+Served by GitHub Pages from the `main` branch, root folder.
